@@ -21,7 +21,7 @@ FastAPI를 사용하여 POST / GET / PUT / DELETE 메소드별 2개씩, 총 8개
   - 미들웨어 정의 (요청 로깅)
   - User / Item 관련 API 엔드포인트 구현
   - 공통 응답 포맷 함수 (`success`, `error`)
-  - 인메모리 DB (`users_db`, `items_db`)
+  - 메모리에 저장하는 임시 데이터 저장소 (users_db, items_db)
 
 ---
 
