@@ -56,7 +56,7 @@ class ItemUpdate(BaseModel):
 
 
 # -------------------------
-# 가짜 DB (메모리)
+# 임시 DB (메모리)
 # -------------------------
 users_db: dict[int, dict] = {}
 items_db: dict[int, dict] = {}
@@ -241,3 +241,5 @@ def delete_item(item_id: int):
         )
 
     del items_db[item_id]
+    # 204는 바디 없이 응답
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
