@@ -1,4 +1,4 @@
-# Backend Framework Practice Assignment - FastAPI
+# Homework2 - FastAPI
 
 전북대학교 백엔드 프레임워크 실습 과제용 FastAPI 프로젝트입니다.  
 FastAPI를 사용하여 POST / GET / PUT / DELETE 메소드별 2개씩, 총 8개의 API를 구현하고,  
@@ -25,6 +25,9 @@ FastAPI를 사용하여 POST / GET / PUT / DELETE 메소드별 2개씩, 총 8개
 
 ---
 
+
+
+
 ## 3. 실행 방법 (How to Run)
 
 1. 패키지 설치
@@ -32,8 +35,8 @@ FastAPI를 사용하여 POST / GET / PUT / DELETE 메소드별 2개씩, 총 8개
 ```bash
 pip install fastapi uvicorn
 
----
 
+```
 ## 4. API 요약 (API Overview)
 
 
