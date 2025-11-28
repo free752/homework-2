@@ -32,6 +32,8 @@ FastAPI를 사용하여 POST / GET / PUT / DELETE 메소드별 2개씩, 총 8개
 ```bash
 pip install fastapi uvicorn
 
+---
+
 ## 4. API 요약 (API Overview)
 
 
