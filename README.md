@@ -32,3 +32,32 @@ FastAPI를 사용하여 POST / GET / PUT / DELETE 메소드별 2개씩, 총 8개
 ```bash
 pip install fastapi uvicorn
 
+## 4. API 요약 (API Overview)
+
+### 4.1 Health
+
+| Method | Path      | 설명                    | 주요 응답 코드      |
+|--------|-----------|-------------------------|---------------------|
+| GET    | `/health` | 서버 상태 확인(health) | 200 OK              |
+
+---
+
+### 4.2 Users
+
+| Method | Path              | 설명                | 주요 응답 코드                |
+|--------|-------------------|---------------------|-------------------------------|
+| POST   | `/users`          | 유저 생성           | 201 Created, 400, 500         |
+| GET    | `/users/{user_id}`| 유저 단건 조회      | 200 OK, 404 Not Found         |
+| PUT    | `/users/{user_id}`| 유저 정보 수정      | 200 OK, 400, 404 Not Found    |
+| DELETE | `/users/{user_id}`| 유저 삭제           | 204 No Content, 404 Not Found |
+
+---
+
+### 4.3 Items
+
+| Method | Path               | 설명                  | 주요 응답 코드                      |
+|--------|--------------------|-----------------------|-------------------------------------|
+| POST   | `/items`           | 아이템 생성           | 201 Created, 400, 404, 503          |
+| GET    | `/items`           | 아이템 목록 조회      | 200 OK                              |
+| PUT    | `/items/{item_id}` | 아이템 정보 수정      | 200 OK, 400, 404 Not Found          |
+| DELETE | `/items/{item_id}` | 아이템 삭제           | 204 No Content, 404 Not Found       |
